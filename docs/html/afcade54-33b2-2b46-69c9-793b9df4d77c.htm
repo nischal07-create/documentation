@@ -4,16 +4,36 @@
             </td></tr><tr><td><a href="d50e7a6f-38b0-1cec-ba6f-4d0a34220b47.htm">AppCommandFactory</a></td><td>
             Application specific command factory that maps textual command names to concrete ICommand implementations.
             Extends the base <span class="noLink">CommandFactory</span> to provide app commands.
+            </td></tr><tr><td><a href="ed544ad8-1033-0581-1665-7a54b7c0f6f0.htm">Array</a></td><td>
+            Command representing an array declaration. Minimal implementation to integrate with parser.
+            Expects three parameters: type (int/real), name, size.
+            </td></tr><tr><td><a href="8e999b8a-edcb-89e0-1166-78c24ccfcf06.htm">Call</a></td><td>
+            Placeholder command for 'call' when using the external parser. The MiniInterpreter
+            handles method invocation itself.
             </td></tr><tr><td><a href="a514e91d-31e0-e4e6-0973-7d4c39d43525.htm">Circle</a></td><td>
             Command which draws a circle at the current pen position.
             Expects a single integer radius parameter.
+            </td></tr><tr><td><a href="cfe4c7ea-77ab-6ef6-019f-8b771c1b7c77.htm">For</a></td><td>
+            Minimal For command placeholder. The in-repo interpreter handles for blocks directly,
+            so this class exists to satisfy any factory requests from external parser.
+            </td></tr><tr><td><a href="fb6c7a3e-ec6e-b380-b41e-c63aaa2514d9.htm">Int</a></td><td>
+            Command representing an integer variable declaration. Minimal implementation to integrate with parser.
+            </td></tr><tr><td><a href="a070b68f-fc26-46bd-cafa-e0abbf89fc64.htm">Method</a></td><td>
+            Placeholder command for 'method' declarations when using the external parser.
+            The in-repo MiniInterpreter handles method parsing/execution itself; this class
+            exists to satisfy factory/command model.
             </td></tr><tr><td><a href="b13ff7bb-aa17-c9f6-9b71-df65d373ed0c.htm">MoveTo</a></td><td>
             Command to move the pen position without drawing.
             Implements parameter handling for two integer parameters: x and y.
             </td></tr><tr><td><a href="5aff4f46-7dd2-d275-43df-79de3c8c3e58.htm">Pen</a></td><td>
             Command to set the pen colour using three integer parameters (R,G,B).
+            </td></tr><tr><td><a href="a58ac281-a7b9-5ba8-18fc-ad371235ffb8.htm">Real</a></td><td>
+            Command representing a real variable declaration. Minimal implementation to integrate with parser.
             </td></tr><tr><td><a href="3f720d3c-6c5d-36bc-ff0b-b41e1b17dc6f.htm">Rect</a></td><td>
             Command to draw a rectangle with two integer parameters: width and height.
+            </td></tr><tr><td><a href="1ed81d96-15e7-8a4f-587a-c5185ed02f5a.htm">While</a></td><td>
+            Minimal While command placeholder. The in-repo interpreter handles while blocks directly,
+            so this class exists to satisfy any factory requests from external parser.
             </td></tr></table></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Classes</a></li></ul></nav></div></div></div></div><script>$(function(){
 SetDefaultLanguage("cs");
 LoadTocFile(null, null);
